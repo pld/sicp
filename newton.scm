@@ -1,4 +1,4 @@
-(define (sqrt x)
+(define (sqrt-newton x)
   (define (good-enough? guess)
     (< (abs (-  (square guess) x)) 0.001))
   (define (average x y)
@@ -9,4 +9,4 @@
     (if (good-enough? guess)
          guess
          (sqrt-iter (improve guess))))
-  (sqrt-iter 1.0))
+  (sqrt-iter (/ x 2.0)))
