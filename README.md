@@ -1,1 +1,1 @@
-Some exercise from SICP in MIT-Scheme.
+Exercises from SICP in MIT-Scheme.
